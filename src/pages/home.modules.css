@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../public/homepage-img.png");
+  background-size: cover;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 190px;
+  height: 60px;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #00b43d;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-top: 350px;
+}

@@ -1,18 +1,5 @@
-.container {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url("../../public/homepage-img.png");
-  background-size: cover;
-}
-
 img {
   max-width: 100%;
-}
-
-.button-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 button {
@@ -25,4 +12,17 @@ button {
   border: 1px solid white;
   border-radius: 8px;
   margin-top: 350px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../public/homepage-img.png");
+  background-size: cover;
+}
+
+.button_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

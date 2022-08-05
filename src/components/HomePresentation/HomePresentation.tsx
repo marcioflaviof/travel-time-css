@@ -1,8 +1,8 @@
-import "./homepresentation.modules.css";
+import styles from "./HomePresentation.module.css";
 
 const HomePresentation = () => {
   return (
-    <div className="title-container">
+    <div className={styles.container}>
       <div style={{ width: "750px", margin: "0 auto" }}>
         <h1>Travel Time</h1>
         <span>

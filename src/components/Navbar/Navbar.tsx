@@ -1,11 +1,11 @@
-import "./nav.modules.css";
+import styles from "./nav.module.css";
 
 const Navbar = () => {
   return (
     <nav>
       <ul>
         <li>
-          <a className="link-border">Home</a>
+          <a className={styles.link_border}>Home</a>
         </li>
         <li>
           <a>About Us</a>

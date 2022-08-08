@@ -17,10 +17,6 @@ h1 {
   min-height: 100vh;
 }
 
-.mask {
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
 .title_container {
   display: flex;
   justify-content: center;

@@ -3,15 +3,15 @@ img {
 }
 
 .button {
-  width: 190px;
-  height: 60px;
+  width: 12rem;
+  height: 3.75rem;
   font-size: 1.5rem;
   justify-content: center;
   align-items: center;
   background-color: var(--green);
   border: 1px solid white;
   border-radius: 8px;
-  margin-top: 350px;
+  margin-top: 22rem;
 }
 
 .container {

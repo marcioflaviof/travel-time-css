@@ -1,27 +1,27 @@
 .button {
-  width: 100px;
-  height: 40px;
+  width: 6.25rem;
+  height: 2.25rem;
   background-color: var(--transparent-450);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: none;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  padding: 24px;
-  min-height: 565px;
-  max-width: 295px;
+  padding: 1.5rem;
+  min-height: 35.25rem;
+  max-width: 18.5rem;
   background-color: var(--transparent-500);
 }
 
 .text_container {
-  margin-top: 15px;
-  max-width: 225px;
+  margin-top: 1rem;
+  max-width: 14rem;
 }
 
 .button_container {
   display: flex;
   justify-content: end;
-  margin-top: 35px;
+  margin-top: 2.25rem;
 }

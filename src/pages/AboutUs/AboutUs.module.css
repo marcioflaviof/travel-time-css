@@ -19,14 +19,14 @@
 .title_container {
   font-size: 3rem;
   text-align: center;
-  margin-top: 120px;
+  margin-top: 7.5rem;
 }
 
 .text_container {
-  margin-top: 32px;
-  max-width: 1205px;
+  margin-top: 2rem;
+  max-width: 75rem;
   font-size: 2rem;
   text-align: justify;
   font-weight: 300;
-  line-height: 48px;
+  line-height: 3rem;
 }

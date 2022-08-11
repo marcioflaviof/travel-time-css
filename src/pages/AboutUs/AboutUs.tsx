@@ -2,7 +2,7 @@ import styles from "./AboutUs.module.css";
 
 const AboutUs = () => {
   return (
-    <div className={styles.container}>
+    <div id="about_us" className={styles.container}>
       <img
         className={styles.background_image}
         src="./about-us.png"

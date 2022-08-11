@@ -18,10 +18,15 @@ nav a {
   display: block;
   padding: 0.5rem;
   color: var(--opaque-white);
+  text-decoration: none;
 }
 
 .link_border {
-  border-bottom: 2px solid var(--grays-100);
+  border-bottom: 2px solid var(--transparent-0);
+}
+
+.link_border:hover {
+  border-bottom: 2px solid var(--white);
 }
 
 nav a:hover {

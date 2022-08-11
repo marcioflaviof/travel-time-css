@@ -7,6 +7,7 @@
   --opaque-white: rgba(255, 255, 255, 0.87);
   --white: #ffffff;
   --green: #00b43d;
+  --transparent-0: rgba(0, 0, 0, 0);
   --transparent-500: rgba(88, 88, 88, 0.5);
   --transparent-450: rgba(78, 78, 78, 0.45);
   --grays-100: #899ca6;
@@ -24,6 +25,10 @@
 }
 
 a:hover {
+  cursor: pointer;
+}
+
+button {
   cursor: pointer;
 }
 

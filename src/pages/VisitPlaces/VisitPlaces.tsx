@@ -4,7 +4,7 @@ import styles from "./VisitPlaces.module.css";
 
 const VisitPlaces = () => {
   return (
-    <div className={styles.container}>
+    <div id="tours_section" className={styles.container}>
       <img
         className={styles.background_image}
         src="./montain-background.png"

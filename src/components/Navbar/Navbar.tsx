@@ -5,22 +5,28 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>
-          <a className={styles.link_border}>Home</a>
+          <a href="#home_section" className={styles.link_border}>
+            Home
+          </a>
         </li>
         <li>
-          <a>About Us</a>
+          <a href="#about_us" className={styles.link_border}>
+            About Us
+          </a>
         </li>
         <li>
-          <a>Tours</a>
+          <a href="#tours_section" className={styles.link_border}>
+            Tours
+          </a>
         </li>
         <li>
-          <a>Gallery</a>
+          <a className={styles.link_border}>Gallery</a>
         </li>
         <li>
-          <a>Reviews</a>
+          <a className={styles.link_border}>Reviews</a>
         </li>
         <li>
-          <a>Contact</a>
+          <a className={styles.link_border}>Contact</a>
         </li>
       </ul>
     </nav>

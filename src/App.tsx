@@ -1,10 +1,14 @@
 import { AboutUs } from "./pages/AboutUs/AboutUs";
+import { Homepage } from "./pages/Homepage/Homepage";
+import { VisitPlaces } from "./pages/VisitPlaces/VisitPlaces";
 
-import "./app.css";
+import styles from "./app.module.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.app}>
+      <Homepage />
+      <VisitPlaces />
       <AboutUs />
     </div>
   );

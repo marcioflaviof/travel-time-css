@@ -14,7 +14,7 @@ const Card = () => {
       </div>
 
       <div className={style.button_container}>
-        <button>Read More</button>
+        <button className={style.button}>Read More</button>
       </div>
     </div>
   );

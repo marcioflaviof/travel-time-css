@@ -16,14 +16,15 @@ nav ul {
 
 nav a {
   display: block;
-  padding: 5px;
+  padding: 0.5rem;
+  color: var(--opaque-white);
 }
 
 .link_border {
-  border-bottom: 2px solid #899ca6;
+  border-bottom: 2px solid var(--grays-100);
 }
 
 nav a:hover {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: var(--white);
+  border-color: var(--white);
 }

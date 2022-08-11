@@ -4,9 +4,17 @@
   line-height: 24px;
   font-weight: 400;
 
+  --opaque-white: rgba(255, 255, 255, 0.87);
+  --white: #ffffff;
+  --green: #00b43d;
+  --transparent-500: rgba(88, 88, 88, 0.5);
+  --transparent-450: rgba(78, 78, 78, 0.45);
+  --grays-100: #899ca6;
+  --grays-700: #242424;
+
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--opaque-white);
+  background-color: var(--grays-700);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,5 +31,4 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-height: 100vh;
 }

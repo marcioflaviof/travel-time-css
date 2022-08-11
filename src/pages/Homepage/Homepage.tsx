@@ -14,7 +14,7 @@ const Homepage = () => {
       <Navbar />
       <HomePresentation />
       <div className={styles.button_container}>
-        <button>Join</button>
+        <button className={styles.button}>Join</button>
       </div>
     </div>
   );

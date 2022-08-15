@@ -3,7 +3,7 @@ import style from "./Card.module.css";
 const Card = () => {
   return (
     <div className={style.container}>
-      <img src="./card-1.png" />
+      <img className={style.image_container} src="./card-1.png" />
       <div className={style.text_container}>
         <h2>Montain</h2>
         <p>

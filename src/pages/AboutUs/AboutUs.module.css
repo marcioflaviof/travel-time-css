@@ -30,3 +30,19 @@
   font-weight: 300;
   line-height: 3rem;
 }
+
+@media (max-width: 35em) {
+  .container {
+    min-height: auto;
+  }
+
+  .title_container {
+    font-size: 3rem;
+  }
+
+  .text_container {
+    font-size: 1rem;
+    max-width: 20rem;
+    line-height: 2rem;
+  }
+}

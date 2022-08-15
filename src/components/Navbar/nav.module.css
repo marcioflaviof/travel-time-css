@@ -1,9 +1,9 @@
-nav {
-  margin-top: 4.75rem;
+.navbar {
+  margin-top: 2.75rem;
   font-size: 150%;
 }
 
-nav ul {
+.navbar ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -14,8 +14,7 @@ nav ul {
   gap: 5%;
 }
 
-nav a {
-  display: block;
+.navbar a {
   padding: 0.5rem;
   color: var(--opaque-white);
   text-decoration: none;
@@ -29,7 +28,82 @@ nav a {
   border-bottom: 2px solid var(--white);
 }
 
-nav a:hover {
+.navbar a:hover {
   color: var(--white);
   border-color: var(--white);
+}
+
+.hamburger_container {
+  display: none;
+}
+
+.menu_toggle {
+  display: none;
+}
+
+@media (max-width: 35em) {
+  .navbar {
+    font-size: 100%;
+    top: 0;
+    display: none;
+    margin: 0;
+    position: fixed;
+    left: 12rem;
+    height: 100%;
+    overflow-x: visible;
+    overflow-y: auto;
+    transition: left 0.3 ease;
+    z-index: 999;
+    background-color: #1a1a1a;
+  }
+
+  .navbar ul {
+    display: block;
+    gap: 5%;
+    margin: 1.5rem 1rem 1rem 1rem;
+    min-height: 100%;
+    width: 12rem;
+  }
+
+  .navbar ul a {
+    display: block;
+    padding: 0.75rem;
+  }
+
+  .navbar:target {
+    display: block;
+    top: 0;
+    left: 0;
+    outline: none;
+  }
+
+  .navbar:target .menu_toggle {
+    z-index: 1001;
+  }
+
+  .navbar:target ul {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .hamburger_container {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    max-height: 24px;
+    max-width: 24px;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .menu_toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-height: 15px;
+    max-width: 15px;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
 }

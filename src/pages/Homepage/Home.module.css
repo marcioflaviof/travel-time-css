@@ -12,12 +12,13 @@ img {
   border: 1px solid white;
   border-radius: 8px;
   margin-top: 22rem;
+  margin-bottom: 5rem;
 }
 
 .container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-width: 100vh;
 }
 
 .homepage_image {
@@ -32,4 +33,14 @@ img {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 35em) {
+  .container {
+    min-width: auto;
+  }
+
+  .button {
+    margin-top: 15rem;
+  }
 }

@@ -1,3 +1,75 @@
 .container {
+  padding: 2rem;
+  min-height: 100vh;
   background-image: url("../../../public/about-us.png");
+  background-repeat: round;
+}
+
+@media (min-width: 48rem) {
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .title_container {
+    text-align: center;
+  }
+
+  .title_container h2 {
+    font-size: 3rem;
+  }
+
+  .text_container {
+    padding: 0 3rem 0 3rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 48rem) {
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .title_container {
+    text-align: center;
+  }
+
+  .title_container h2 {
+    font-size: 2.5rem;
+  }
+
+  .text_container {
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 32rem) {
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .title_container {
+    text-align: center;
+  }
+
+  .title_container h2 {
+    font-size: 2rem;
+  }
+
+  .text_container {
+    padding: 0;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+  }
 }

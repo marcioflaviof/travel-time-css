@@ -6,12 +6,17 @@
 
   --opaque-white: rgba(255, 255, 255, 0.87);
   --white: #ffffff;
+  --black: #1a1a1a;
   --green: #00b43d;
   --transparent-0: rgba(0, 0, 0, 0);
   --transparent-500: rgba(88, 88, 88, 0.5);
   --transparent-450: rgba(78, 78, 78, 0.45);
   --grays-100: #899ca6;
   --grays-700: #242424;
+
+  --z-background: 999;
+  --z-default: 1000;
+  --z-foreground: 1001;
 
   color-scheme: light dark;
   color: var(--opaque-white);

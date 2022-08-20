@@ -1,46 +1,83 @@
-img {
-  max-width: 100%;
-}
-
-.button {
-  width: 12rem;
-  height: 3.75rem;
-  font-size: 1.5rem;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--green);
-  border: 1px solid white;
-  border-radius: 8px;
-  margin-top: 22rem;
-  margin-bottom: 5rem;
-}
-
 .container {
-  position: relative;
-  width: 100%;
-  min-width: 100vh;
+  background-image: url("../../../public/homepage-img.png");
+  background-repeat: round;
 }
 
-.homepage_image {
-  position: absolute;
-  height: 100%;
-  min-width: 100%;
-  opacity: 0.6;
-  z-index: -10;
-}
-
-.button_container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 35em) {
+@media (min-width: 48rem) {
   .container {
-    min-width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+
+  .header {
+    flex-grow: 1;
+  }
+
+  .button_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   .button {
-    margin-top: 15rem;
+    width: 12rem;
+    height: 3.75rem;
+    font-size: 1.5rem;
+    background-color: var(--green);
+    border: 1px solid white;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 48rem) {
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+
+  .button_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .button {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    background-color: var(--green);
+    border: 1px solid white;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 32rem) {
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+
+  .button_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .button {
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    background-color: var(--green);
+    border: 1px solid white;
+    border-radius: 8px;
   }
 }

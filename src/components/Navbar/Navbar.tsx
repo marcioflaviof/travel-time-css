@@ -2,7 +2,7 @@ import styles from "./nav.module.css";
 
 const Navbar = () => {
   return (
-    <header>
+    <>
       <a
         href="#main-menu"
         className={styles.hamburger_container}
@@ -59,7 +59,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <a href="#main-menu-toggle" className={styles.backdrop} hidden></a>
-    </header>
+    </>
   );
 };
 

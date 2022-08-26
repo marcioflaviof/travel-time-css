@@ -3,6 +3,7 @@ import styles from "./AboutUs.module.css";
 const AboutUs = () => {
   return (
     <div id="about_us" className={styles.container}>
+      <div className={styles.background_img} />
       <div className={styles.title_container}>
         <h2>About US</h2>
       </div>

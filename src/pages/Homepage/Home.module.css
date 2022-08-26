@@ -1,83 +1,52 @@
 .container {
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.background_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
   background-image: url("../../../public/homepage-img.png");
-  background-repeat: round;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: var(--z-background);
+  opacity: 0.7;
 }
 
-@media (min-width: 48rem) {
-  .container {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    padding: 2rem;
-    min-height: 100vh;
-  }
-
-  .header {
-    flex-grow: 1;
-  }
-
-  .button_container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .button {
-    width: 12rem;
-    height: 3.75rem;
-    font-size: 1.5rem;
-    background-color: var(--green);
-    border: 1px solid white;
-    border-radius: 8px;
-  }
+.button_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
-@media (max-width: 48rem) {
-  .container {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    padding: 2rem;
-    min-height: 100vh;
-  }
+.button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  background-color: var(--green);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}
 
-  .button_container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
+@media (min-width: 32rem) {
   .button {
     width: 10rem;
     height: 3.5rem;
     font-size: 1.5rem;
-    background-color: var(--green);
-    border: 1px solid white;
-    border-radius: 8px;
   }
 }
 
-@media (max-width: 32rem) {
-  .container {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    padding: 2rem;
-    min-height: 100vh;
-  }
-
-  .button_container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
+@media (min-width: 48rem) {
   .button {
-    width: 8rem;
-    height: 3rem;
-    font-size: 1.25rem;
-    background-color: var(--green);
-    border: 1px solid white;
-    border-radius: 8px;
+    width: 12rem;
+    height: 3.75rem;
+    font-size: 1.5rem;
   }
 }

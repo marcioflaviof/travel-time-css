@@ -1,175 +1,105 @@
-.hamburger_container {
+.navbar {
   display: none;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 12rem;
+  height: 100%;
+  overflow-x: visible;
+  overflow-y: auto;
+  z-index: var(--z-background-sidebar);
+  background-color: var(--black);
+}
+
+.navbar ul {
+  display: block;
+  list-style-type: none;
+  margin: 1.5rem 1rem 1rem 1rem;
+  min-height: 100%;
+  width: 12rem;
+}
+
+.link_border {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: var(--opaque-white);
+}
+
+.link_border:hover {
+  color: var(--white);
+}
+
+.navbar:target {
+  display: block;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.navbar:target .menu_toggle {
+  z-index: var(--z-foreground-sidebar);
+}
+
+.navbar:target ul {
+  position: relative;
+  z-index: var(--z-default-sidebar);
+}
+
+.hamburger_container {
+  display: block;
+  max-height: 1.5rem;
+  max-width: 1.5rem;
+  cursor: pointer;
 }
 
 .menu_toggle {
-  display: none;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-height: 1rem;
+  max-width: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
 }
 
 @media (min-width: 48rem) {
   .navbar {
+    display: flex;
+    position: unset;
+    background-color: transparent;
     font-size: 1.5rem;
   }
 
   .navbar ul {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    list-style-type: none;
+    width: 100%;
   }
 
   .navbar a {
     padding: 0.5rem;
-    color: var(--opaque-white);
-    text-decoration: none;
   }
 
   .link_border {
-    border-bottom: 2px solid var(--transparent-0);
+    border-bottom: 0.125rem solid var(--transparent-0);
   }
 
   .link_border:hover {
-    border-bottom: 2px solid var(--white);
+    border-bottom: 0.125rem solid var(--white);
   }
 
   .navbar a:hover {
     color: var(--white);
   }
-}
-
-@media (max-width: 48rem) {
-  .navbar {
-    display: none;
-    position: fixed;
-    margin: 0;
-    top: 0;
-    left: 12rem;
-    height: 100%;
-    overflow-x: visible;
-    overflow-y: auto;
-    z-index: var(--z-background);
-    background-color: var(--black);
-  }
-
-  .navbar ul {
-    display: block;
-    list-style-type: none;
-    margin: 1.5rem 1rem 1rem 1rem;
-    min-height: 100%;
-    width: 12rem;
-  }
-
-  .link_border {
-    display: block;
-    padding: 0.75rem;
-    text-decoration: none;
-    color: var(--opaque-white);
-  }
-
-  .link_border:hover {
-    color: var(--white);
-  }
-
-  .navbar:target {
-    display: block;
-    top: 0;
-    left: 0;
-    outline: none;
-  }
-
-  .navbar:target .menu_toggle {
-    z-index: var(--z-foreground);
-  }
-
-  .navbar:target ul {
-    position: relative;
-    z-index: var(--z-normal);
-  }
 
   .hamburger_container {
-    display: block;
-    max-height: 24px;
-    max-width: 24px;
-    cursor: pointer;
+    display: none;
   }
 
   .menu_toggle {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    max-height: 15px;
-    max-width: 15px;
-    cursor: pointer;
-    padding: 0.5rem;
-  }
-}
-
-@media (max-width: 32rem) {
-  .navbar {
     display: none;
-    position: fixed;
-    margin: 0;
-    top: 0;
-    left: 12rem;
-    height: 100%;
-    overflow-x: visible;
-    overflow-y: auto;
-    z-index: var(--z-background);
-    background-color: var(--black);
-  }
-
-  .navbar ul {
-    display: block;
-    list-style-type: none;
-    margin: 1.5rem 1rem 1rem 1rem;
-    min-height: 100%;
-    width: 12rem;
-  }
-
-  .link_border {
-    display: block;
-    padding: 0.75rem;
-    text-decoration: none;
-    color: var(--opaque-white);
-  }
-
-  .link_border:hover {
-    color: var(--white);
-  }
-
-  .navbar:target {
-    display: block;
-    top: 0;
-    left: 0;
-    outline: none;
-  }
-
-  .navbar:target .menu_toggle {
-    z-index: var(--z-foreground);
-  }
-
-  .navbar:target ul {
-    position: relative;
-    z-index: var(--z-normal);
-  }
-
-  .hamburger_container {
-    display: block;
-    max-height: 24px;
-    max-width: 24px;
-    cursor: pointer;
-  }
-
-  .menu_toggle {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    max-height: 15px;
-    max-width: 15px;
-    cursor: pointer;
-    padding: 0.5rem;
   }
 }

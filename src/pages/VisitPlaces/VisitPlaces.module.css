@@ -1,34 +1,66 @@
-h1 {
-  font-size: 2.5rem;
+.container {
+  min-height: 100vh;
+  position: relative;
+  padding: 2rem;
 }
 
-.background_image {
+.background_img {
   position: absolute;
-  min-width: 100%;
+  left: 0;
+  top: 0;
   height: 100%;
+  width: 100%;
+  background-image: url("../../../public/montain-background.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  z-index: -10;
+  z-index: var(--z-background);
   opacity: 0.7;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
+.title_container {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.title_container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 120px;
-  text-align: center;
+.title_container h2 {
+  font-size: 2rem;
 }
 
 .card_container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1, fit-content(80%));
+  grid-template-rows: auto;
   justify-content: center;
-  gap: 24px;
-  margin-top: 50px;
+  gap: 1rem;
+}
+
+@media (min-width: 32rem) {
+  .title_container h2 {
+    font-size: 2.5rem;
+  }
+
+  .card_container {
+    grid-template-columns: repeat(1, fit-content(50%));
+  }
+}
+
+@media (min-width: 48rem) {
+  .title_container h2 {
+    font-size: 3rem;
+  }
+
+  .card_container {
+    grid-template-columns: repeat(2, 30%);
+  }
+}
+
+@media (min-width: 80rem) {
+  .title_container {
+    margin-bottom: 5rem;
+  }
+
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
 }

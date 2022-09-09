@@ -1,32 +1,61 @@
 .container {
   display: flex;
-  align-items: center;
-  flex-direction: column;
   position: relative;
-  width: 100%;
+  flex-flow: row wrap;
   min-height: 100vh;
+  justify-content: center;
+  padding: 2rem;
 }
 
-.background_image {
+.background_img {
   position: absolute;
-  min-width: 100%;
+  left: 0;
+  top: 0;
   height: 100%;
+  width: 100%;
+  background-image: url("../../../public/about-us.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  z-index: -10;
+  z-index: var(--z-background);
   opacity: 0.7;
 }
 
 .title_container {
-  font-size: 3rem;
   text-align: center;
-  margin-top: 120px;
+}
+
+.title_container h2 {
+  font-size: 2rem;
 }
 
 .text_container {
-  margin-top: 32px;
-  max-width: 1205px;
-  font-size: 2rem;
-  text-align: justify;
-  font-weight: 300;
-  line-height: 48px;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 32rem) {
+  .title_container h2 {
+    font-size: 2.5rem;
+  }
+
+  .text_container {
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .title_container h2 {
+    font-size: 3rem;
+  }
+
+  .text_container {
+    padding: 2rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: justify;
+  }
 }

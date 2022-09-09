@@ -1,16 +1,36 @@
-h1 {
-  font-size: 6rem;
-}
-
-span {
-  font-size: 1.5rem;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 125px;
+.text_container {
   text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 32rem) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .text_container {
+    flex-grow: 2;
+  }
+
+  .title {
+    font-size: 6rem;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
 }
